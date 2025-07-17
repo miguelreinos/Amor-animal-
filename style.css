@@ -1,0 +1,78 @@
+/* Estilo general del body */
+.body {
+  margin-top: 80px;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+/* Imagen del logo */
+.logo {
+  border-radius: 20px;
+  width: 40px;
+  height: 40px;
+  object-fit: contain;
+  margin-right: 10px;
+}
+
+/* Navbar */
+.navbar {
+  background: linear-gradient(90deg, #E53935, #FF7043);
+}
+
+/* Offcanvas */
+.offcanvas {
+  background-color: #F57C00;
+}
+
+/* TÍTULO DE LA NAVBAR ("Veterinaria AMOR ANIMAL") */
+#titulonavbar {
+  color: #FFFFFF;
+   font-weight: bold;
+  font-size: 1.3rem;
+  transition: color 0.3s ease;
+}
+#titulonavbar:hover {
+  color: #FFEB3B;
+}
+
+
+#offcanvasNavbarLabel {
+  color: #ffffff;
+  font-size: 1.3rem;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+#offcanvasNavbarLabel:hover {
+  color: #FFEB3B;
+}
+
+/* 🔥 TODOS LOS ENLACES DEL MENÚ */
+.nav-link {
+  color: #fcfafa !important;
+   font-weight: bold;
+  text-decoration: none !important; /* Sin subrayado */
+  transition: color 0.3s ease;
+}
+.nav-link:hover {
+  color: #FFEB3B !important;
+}
+
+/* 🔥 ESTILO PARA EL ENLACE ACTIVO ("Inicio") */
+.nav-link.active {
+  color: #ffffff!important;
+  font-weight: bold;
+  text-decoration: none !important; /* ¡Quita la raya debajo! */
+}
+.nav-link.active:hover {
+  color: #FFEB3B !important; /* Vuelve a amarillo si se pasa el mouse */
+}
+
+/* Botón de búsqueda */
+.btn-outline-light {
+  border-color: white;
+  color: white;
+}
+.btn-outline-light:hover {
+  background-color: #FFEB3B;
+  color: black;
+}
