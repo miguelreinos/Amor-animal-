@@ -76,3 +76,12 @@
   background-color: #FFEB3B;
   color: black;
 }
+/* letras carruel */
+.carousel-caption {
+    color: #E53935;
+  font-size: 1.3rem;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+
