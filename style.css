@@ -1,87 +1,97 @@
-/* Estilo general del body */
-.body {
-  margin-top: 80px;
-  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+/* Fondo general claro que combina con el logo */
+body {
+  background-color: #fafaf9; /* Fondo crema suave */
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  margin-top: 80px; /* Espacio para navbar fija */
 }
 
-/* Imagen del logo */
+/* Logo redondo y bien ajustado */
 .logo {
-  border-radius: 20px;
   width: 40px;
   height: 40px;
-  object-fit: contain;
-  margin-right: 10px;
+  border-radius: 10px;
+  object-fit: cover;
 }
 
-/* Navbar */
+/* NAVBAR con degradado que toma los colores del corazón */
 .navbar {
-  background: linear-gradient(90deg, #E53935, #FF7043);
+  background: linear-gradient(135deg, #F57C00, #E53935); /* Degradado naranja-rojo */
 }
-
-/* Offcanvas */
-.offcanvas {
-  background-color: #F57C00;
+.offcanvas-title {
+  font-weight: bold;
 }
-
-/* TÍTULO DE LA NAVBAR ("Veterinaria AMOR ANIMAL") */
-#titulonavbar {
-  color: #FFFFFF;
-   font-weight: bold;
-  font-size: 1.3rem;
+.offcanvas-body {
+  background-color: 	#FFE0B2; /* Fondo claro para el menú */
+}
+/* Título "Amor-animal" en color amarillo suave */
+.navbar-brand {
+  color: #FFF176; /* Amarillo pastel */
+  font-weight: bold;
+  font-size: 1.2rem;
+}
+.navbar-brand {
+  color: #FFF176;
+  font-weight: bold;
+  font-size: 1.2rem;
   transition: color 0.3s ease;
 }
-#titulonavbar:hover {
-  color: #FFEB3B;
+
+.navbar-brand:hover {
+  color: #080808; /* Negro casi puro al pasar el mouse */
 }
 
-
-#offcanvasNavbarLabel {
-  color: #ffffff;
-  font-size: 1.3rem;
+.nav-item a {
+  color: #0a0a0a;
   font-weight: bold;
-  text-transform: uppercase;
-}
-
-#offcanvasNavbarLabel:hover {
-  color: #FFEB3B;
-}
-
-/* 🔥 TODOS LOS ENLACES DEL MENÚ */
-.nav-link {
-  color: #fcfafa !important;
-   font-weight: bold;
-  text-decoration: none !important; /* Sin subrayado */
+  font-size: 1.2rem;
   transition: color 0.3s ease;
 }
-.nav-link:hover {
-  color: #FFEB3B !important;
+
+.nav-item a:hover {
+  color: #FFD600; /* Opcional: puedes cambiar el color al hacer hover */
+}
+/* Sección de Servicios */
+.seccion-servicios {
+  padding: 60px 0;
+  background: linear-gradient(135deg, #FFF3E0, #FFCC80);
 }
 
-/* 🔥 ESTILO PARA EL ENLACE ACTIVO ("Inicio") */
-.nav-link.active {
-  color: #ffffff!important;
+.titulo-seccion {
+  text-align: center;
+  color: #4E342E;
   font-weight: bold;
-  text-decoration: none !important; /* ¡Quita la raya debajo! */
-}
-.nav-link.active:hover {
-  color: #FFEB3B !important; /* Vuelve a amarillo si se pasa el mouse */
+  margin-bottom: 40px;
+  font-size: 2.5rem;
 }
 
-/* Botón de búsqueda */
-.btn-outline-light {
-  border-color: white;
-  color: white;
-}
-.btn-outline-light:hover {
-  background-color: #FFEB3B;
-  color: black;
-}
-/* letras carruel */
-.carousel-caption {
-    color: #E53935;
-  font-size: 1.3rem;
-  font-weight: bold;
-  text-transform: uppercase;
+.card-servicio {
+  border: none;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease;
+  background-color: #ffffff;
 }
 
+.card-servicio:hover {
+  transform: translateY(-5px);
+}
+
+.icono-servicio {
+  width: 80px;
+  margin-bottom: 15px;
+}
+
+.titulo-servicio {
+  color: #4E342E;
+  font-size: 1.25rem;
+  font-weight: 600;
+}
+
+.descripcion-servicio {
+  color: #6D4C41;
+  font-size: 0.95rem;
+}
+
+
+/*  */
+/* Fondo del subtítulo a todo el ancho */
 
