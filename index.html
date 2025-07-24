@@ -35,20 +35,22 @@
       </li>
       <li class="nav-item">
         <a class="nav-link" href="consulta veterinaria">Consulta Veterinaria </a>
-      <li class="nav-item">
-        <a class="nav-link" href="tienda">Tienda </a>
-      </li>
+     
       <li class="nav-item">
         <a class="nav-link" href="peluqueria">Peluquería </a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link" href="emergencias">Emergencias </a>
       </li>
         <li class="nav-item">
         <a class="nav-link" href="cirugias menores">Cirugías Menores </a>
       </li>
       <li class="nav-item">
+        <a class="nav-link" href="emergencias">Emergencias </a>
+      </li>
+      
+      <li class="nav-item">
         <a class="nav-link" href="adopciones">Adopciones </a>
+      </li>
+       <li class="nav-item">
+        <a class="nav-link" href="tienda">Tienda </a>
       </li>
     </ul>
     <form class="d-flex mt-3" role="search">
@@ -117,15 +119,7 @@
         </div>
       </div>
       
-      <div class="col">
-        <div class="card card-servicio">
-          <div class="card-body text-center">
-            <img src="img/pet-shop.png" alt="Vacunación" class="icono-servicio">
-            <h5 class="titulo-servicio">Tienda</h5>
-            <p class="descripcion-servicio">Todo lo que necesitas para consentir a tu mascota.</p>
-          </div>
-        </div>
-      </div>
+   
     
       <div class="col">
         <div class="card card-servicio">
@@ -136,7 +130,16 @@
           </div>
         </div>
       </div>
-<!--  -->
+<!--cirujias menores   -->
+<div class="col">
+  <div class="card card-servicio">
+    <div class="card-body text-center">
+      <img src="img/pets.png" alt="Cirugías" class="icono-servicio">
+      <h5 class="titulo-servicio">Cirugías Menores</h5>
+      <p class="descripcion-servicio">Procedimientos quirúrgicos seguros y realizados por especialistas.</p>
+    </div>
+  </div>
+</div>
    
 
 <!-- Emergencias 24/7 -->
@@ -150,16 +153,8 @@
   </div>
 </div>
 
-<!-- Cirugías Menores -->
-<div class="col">
-  <div class="card card-servicio">
-    <div class="card-body text-center">
-      <img src="img/pets.png" alt="Cirugías" class="icono-servicio">
-      <h5 class="titulo-servicio">Cirugías Menores</h5>
-      <p class="descripcion-servicio">Procedimientos quirúrgicos seguros y realizados por especialistas.</p>
-    </div>
-  </div>
-</div>
+
+
 
 <!-- Adopciones -->
 <div class="col">
@@ -171,6 +166,16 @@
     </div>
   </div>
 </div>
+<!-- tienda -->
+    <div class="col">
+        <div class="card card-servicio">
+          <div class="card-body text-center">
+            <img src="img/pet-shop.png" alt="Vacunación" class="icono-servicio">
+            <h5 class="titulo-servicio">Tienda</h5>
+            <p class="descripcion-servicio">Todo lo que necesitas para consentir a tu mascota.</p>
+          </div>
+        </div>
+      </div>
 <!-- inicio de la sección de consulta veterinaria -->
 <!-- Sección simple de título centrado -->
 <!-- Sección de inicio de Consulta Veterinaria -->
@@ -182,20 +187,172 @@
     </p>
   </div>
 </section>
-<section>
-  <div class="card" style="width: 18rem;">
-  <img src="..." class="card-img-top" alt="...">
-  <div class="card-body">
-    <h5 class="card-title">Card title</h5>
-    <p class="card-text">En Amor Animal, la salud de tu mascota es nuestra prioridad. Nuestro equipo veterinario está listo para brindarte atención médica confiable, ética y amorosa.</p>
-    <a href="#" class="btn btn-primary">Go somewhere</a>
+<!-- tarjetas consult veterinaria  -->
+ <div class="card-flip" onclick="this.classList.toggle('flipped')">
+  <div class="card-inner">
+    <!-- Parte frontal -->
+    <div class="card-front">
+      <img src="img/perro tarjeta.jpg" alt="Mascota feliz">
+      <h5>Consulta Veterinaria</h5>
+      <p>La salud de tu mascota es nuestra prioridad.</p>
+      <button class="btn btn-primary">Conoce más</button>
+    </div>
+
+    <!-- Parte trasera -->
+    <div class="card-back">
+      <img src="img/parte de atras etiqueta.jpg" alt="Veterinario">
+      <p>Atención médica ética, amorosa y profesional. Servicios de consulta general, vacunación y urgencias.</p>
+      <button class="btn btn-secondary">Volver</button>
+    </div>
   </div>
 </div>
+<!-- segunda tarjeta  -->
+  <div class="card-flip" onclick="this.classList.toggle('flipped')">
+  <div class="card-inner">
+    <!-- Parte frontal -->
+    <div class="card-front">
+      <img src="img/segunda tarjeta .jpg" alt="Mascota feliz">
+      <h5>Chequeos Preventivos</h5>
+      <p>Detecta problemas de salud antes de que avancen. Nuestro equipo realiza revisiones completas para mantener a tu mascota sana y feliz.</p>
+      <button class="btn btn-primary">Conoce más</button>
+    </div>
+
+    <!-- Parte trasera -->
+    <div class="card-back">
+      <img src="img/atras 2.jpg" alt="Veterinario">
+       <h5 class="card-title">Más Detalles</h5>
+      <p> Evaluamos signos vitales, piel, peso, dientes y comportamiento. Recomendamos exámenes complementarios si es necesario. Todo con cariño y profesionalismo</p>
+      <button class="btn btn-secondary">Volver</button>
+    </div>
+  </div>
+</div>
+<!-- 3 tarjeta  -->
+ <div class="card-flip" onclick="this.classList.toggle('flipped')">
+  <div class="card-inner">
+    <!-- Parte frontal -->
+    <div class="card-front">
+      <img src="img/3 imaguen tarjetas.webp" alt="Mascota feliz">
+      <h5>Vacunación y Desparasitació</h5>
+      <p>Protege a tu mascota de enfermedades graves. Contamos con esquemas de vacunación y desparasitación adecuados según la especie y edad.</p>
+      <button class="btn btn-primary">Conoce más</button>
+    </div>
+
+    <!-- Parte trasera -->
+    <div class="card-back">
+      <img src="2 etiqueta 3.jpg" alt="Veterinario">
+       <h5 class="card-title">Información Adicional</h5>
+      <p> Aplicamos vacunas autorizadas y seguras. Además, ofrecemos seguimiento personalizado y recordatorios para mantener su salud al día.</p>
+      <button class="btn btn-secondary">Volver</button>
+    </div>
+  </div>
+</div>
+<!-- comienzo de la sección de peluqueria  -->
+ <section class="peluqueria ">
+  <div class="container-peluqueria">
+    <h2 class="consulta-titulo"> Peluquería </h2>
+    <p class="consulta-descripcion">
+     En la peluquería de Amor Animal ofrecemos servicios de baño, corte de pelo y estética para tu mascota. Nuestro equipo está capacitado para brindar un trato cariñoso y profesional, asegurando que tu peludo salga luciendo y sintiéndose genial.
+    </p>
+  </div>
 </section>
- 
-<!-- fin de la sección de consulta veterinaria -->
+<!-- primer tarjeta en peluqueria -->
+ <div class="card-flip" onclick="this.classList.toggle('flipped')">
+  <div class="card-inner">
+    <!-- Parte frontal -->
+    <div class="card-front">
+      <img src="img/bathroom dog.jpg" alt="Mascota feliz">
+      <h5> Baños y Peluquería Profesional</h5>
+     <p> Limpieza profunda, corte y cepillado adaptado al tipo de pelaje de tu mascota. Cuidamos su higiene y apariencia con cariño.</p>
+      <button class="btn btn-primary">Conoce más</button>
+    </div>
 
+    <!-- Parte trasera -->
+    <div class="card-back">
+      <img src="img/perro peluqueria1.jpg" alt="Veterinario">
+       <h5 class="card-title">Detalles del Servicio</h5>
+      <p> Ofrecemos cortes de pelo a la medida, baños con productos especiales y un trato cariñoso para que tu mascota se sienta cómoda y feliz.</p>
+      <button class="btn btn-secondary">Solicitar cita</button>
+    </div>
+  </div>
+</div>
+ <!--segunda tarjeta en peluquería -->
+  <div class="card-flip" onclick="this.classList.toggle('flipped')">
+  <div class="card-inner">
+    <!-- Parte frontal -->
+    <div class="card-front">
+      <img src="img/cuida animal.jpg" alt="Mascota feliz">
+      <h5>  Corte de Uñas y Limpieza </h5>
+     <p> Evita infecciones y molestias. Nuestro equipo realiza corte de uñas y limpieza auricular con seguridad y precisión.
 
+</p>
+      <button class="btn btn-primary">Conoce más</button>
+    </div>
+
+    <!-- Parte trasera -->
+    <div class="card-back">
+      <img src="img/perro peliqueria 2.jpg" alt="Veterinario">
+       <h5 class="card-title">Detalles del Servicio</h5>
+      <p>Utilizamos herramientas esterilizadas y técnicas no invasivas para garantizar la comodidad de tu mascota durante el procedimiento.</p>
+      <button class="btn btn-secondary"> Solicitar cita</button>
+    </div>
+  </div>
+</div>
+<!-- 3 tarjeta  -->
+   <div class="card-flip" onclick="this.classList.toggle('flipped')">
+  <div class="card-inner">
+    <!-- Parte frontal -->
+    <div class="card-front">
+      <img src="img/venefisios2.jpg" alt="Mascota feliz">
+      <h5>  Estética y Aromaterapia </h5>
+     <p> 
+       Tratamientos especiales con aceites naturales para relajar a tu mascota mientras mejora el aspecto de su pelaje.
+</p>
+      <button class="btn btn-primary">Conoce más</button>
+    </div>
+
+    <!-- Parte trasera -->
+    <div class="card-back">
+      <img src="img/123456.jpg" alt="Veterinario">
+       <h5 class="card-title">Beneficios Naturales</h5>
+      <p>Aromas suaves, baños hidratantes y masajes relajantes. Perfecto para mascotas ansiosas o después de un día largo</p>
+      <button class="btn btn-secondary"> Solicitar cita</button>
+    </div>
+  </div>
+</div>
+    <!-- 3 seccion  cirugias menores  -->
+     <section class="cirugias menores">
+  <div class="container-sirugias">
+    <h2 class="consulta-titulo">cirugias menores</h2>
+</h2>
+    <p class="consulta-descripcion">
+      Realizamos esterilizaciones, extracciones y limpiezas bajo protocolos seguros, en un entorno higiénico y supervisado por profesionales.
+    </p>
+  </div>
+</section>
+    <!-- tarjeta 1  -->
+       <div class="card-flip" onclick="this.classList.toggle('flipped')">
+  <div class="card-inner">
+    <!-- Parte frontal -->
+    <div class="card-front">
+      <img src="img/venefisios2.jpg" alt="Mascota feliz">
+      <h5>  ciruguias menores  </h5>
+     <p> 
+        Intervenciones seguras y precisas para cuidar de la salud de tu mascota sin complicaciones.
+        </p>
+      <button class="btn btn-primary">Conoce más</button>
+    </div>
+
+    <!-- Parte trasera -->
+    <div class="card-back">
+      <img src="img/123456.jpg" alt="Veterinario">
+       <h5 class="card-title"> Más detalles </h5>
+      <p>
+        Realizamos esterilizaciones, extracciones y limpiezas bajo protocolos seguros, en un entorno higiénico y supervisado por profesionales.
+      </p>
+      <button class="btn btn-secondary"> Solicitar cita</button>
+    </div>
+  </div>
+</div>
 
       <!--  -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js" integrity="sha384-ndDqU0Gzau9qJ1lfW4pNLlhNTkCfHzAVBReH9diLvGRem5+R9g2FzA8ZGN954O5Q" crossorigin="anonymous"></script>

@@ -1,8 +1,8 @@
 /* Fondo general claro que combina con el logo */
 body {
-  background-color: #fafaf9; /* Fondo crema suave */
+ background-color: 	#FFE0B2;
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-  margin-top: 80px; /* Espacio para navbar fija */
+  margin-top: 20px; /* Espacio para navbar fija */
 }
 
 /* Logo redondo y bien ajustado */
@@ -101,7 +101,7 @@ body {
   color: rgb(248, 245, 245);
 }
 
-.inicio-consulta h2 {
+.inicio-consulta  {
   font-size: 3rem;
   margin-bottom: 10px;
   font-weight: bold;
@@ -136,4 +136,94 @@ body {
 .consulta-descripcion {
   font-size: 1.25rem;
   line-height: 1.6;
+}
+/*  css de la primera tarjeta  de la sección de consulta veterinaria */
+.card-flip {
+  width: 300px;
+  height: 400px;
+  perspective: 1000px;
+  margin: 30px auto;
+  cursor: pointer;
+}
+
+.card-inner {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  transition: transform 0.8s ease-in-out;
+  transform-style: preserve-3d;
+}
+
+.card-flip.flipped .card-inner {
+  transform: rotateY(180deg);
+}
+
+.card-front,
+.card-back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  backface-visibility: hidden;
+  border-radius: 15px;
+  background-color: #fff;
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  text-align: center;
+}
+
+.card-front img,
+.card-back img {
+  width: 100%;
+  border-radius: 10px;
+  margin-bottom: 10px;
+}
+
+.card-back {
+  transform: rotateY(180deg);
+}
+.btn-primary {
+  background-color: #ff5e62;
+  border: none;
+  border-radius: 5px;
+  padding: 10px 20px;
+  color: white;
+  font-weight: bold;
+  transition: background-color 0.3s ease;
+}
+
+.btn-primary:hover {
+  background-color: #ff914d;
+}
+.btn-secondary{
+    background-color: #ff5e62;
+  border: none;
+  border-radius: 5px;
+  padding: 10px 20px;
+  color: white;
+  font-weight: bold;
+  transition: background-color 0.3s ease;
+}
+
+.btn-secondary:hover {
+  background-color: #ff914d;
+}
+/* css de la segunda tarjeta */
+
+.peluqueria {
+  width: 100%;
+  background: linear-gradient(90deg, #ff7e5f, #feb47b); /* gradiente cálido */
+  padding: 60px 20px;
+  margin-top: 50px;
+  border-radius: 40px;
+  text-align: center;
+  color: #4E342E;
+}
+.cirugias {
+  width: 100%;
+  background: linear-gradient(90deg, #ff7e5f, #feb47b); /* gradiente cálido */
+  padding: 60px 20px;
+  margin-top: 50px;
+  border-radius: 40px;
+  text-align: center;
+  color: #4E342E;
 }
