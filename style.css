@@ -93,5 +93,47 @@ body {
 
 
 /*  */
-/* Fondo del subtítulo a todo el ancho */
+.inicio-consulta {
+  background: linear-gradient(to right, #ff914d, #ff5e62); /* fondo degradado */
+  text-align: center;
+  padding: 60px 20px;
 
+  color: rgb(248, 245, 245);
+}
+
+.inicio-consulta h2 {
+  font-size: 3rem;
+  margin-bottom: 10px;
+  font-weight: bold;
+}
+
+.inicio-consulta p {
+  font-size: 1.2rem;
+  color: #ffe; /* blanco suave */
+}
+/*  */
+.consulta-veterinaria {
+  width: 100%;
+  background: linear-gradient(90deg, #ff7e5f, #feb47b); /* gradiente cálido */
+  padding: 60px 20px;
+  margin-top: 50px;
+  border-radius: 40px;
+  text-align: center;
+  color: #4E342E;
+}
+
+.container-consulta {
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+.consulta-titulo {
+  font-size: 3rem;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+.consulta-descripcion {
+  font-size: 1.25rem;
+  line-height: 1.6;
+}
