@@ -1,6 +1,6 @@
 /* Fondo general claro que combina con el logo */
 body {
- background-color: 	#FFE0B2;
+  background-color: #FFE0B2;
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   margin-top: 20px; /* Espacio para navbar fija */
 }
@@ -21,7 +21,7 @@ body {
   font-weight: bold;
 }
 .offcanvas-body {
-  background-color: 	#FFE0B2; /* Fondo claro para el menú */
+  background-color: #FFE0B2; /* Fondo claro para el menú */
 }
 /* Título "Amor-animal" en color amarillo suave */
 .navbar-brand {
@@ -91,17 +91,16 @@ body {
   font-size: 0.95rem;
 }
 
-
-/*  */
+/* inicio de la sección de consulta veterinaria */
+/* Esta clase no se estaba usando en el HTML que me pasaste, la mantengo por si la necesitas */
 .inicio-consulta {
   background: linear-gradient(to right, #ff914d, #ff5e62); /* fondo degradado */
   text-align: center;
   padding: 60px 20px;
-
   color: rgb(248, 245, 245);
 }
 
-.inicio-consulta  {
+.inicio-consulta h2 { /* Cambiado de .inicio-consulta directamente a h2 para especificidad */
   font-size: 3rem;
   margin-bottom: 10px;
   font-weight: bold;
@@ -109,10 +108,15 @@ body {
 
 .inicio-consulta p {
   font-size: 1.2rem;
-  color: #ffe; /* blanco suave */
+  color: #ffe;
 }
-/*  */
-.consulta-veterinaria {
+
+.consulta-veterinaria,
+.peluqueria,
+.cirugias,
+.emergencias, /* Añadido para las nuevas secciones */
+.adopciones, /* Añadido para las nuevas secciones */
+.tienda { /* Añadido para las nuevas secciones */
   width: 100%;
   background: linear-gradient(90deg, #ff7e5f, #feb47b); /* gradiente cálido */
   padding: 60px 20px;
@@ -137,12 +141,22 @@ body {
   font-size: 1.25rem;
   line-height: 1.6;
 }
-/*  css de la primera tarjeta  de la sección de consulta veterinaria */
+
+/* Contenedor de las tarjetas flip */
+.container-cards {
+  display: flex; /* Usa flexbox para alinear las tarjetas */
+  flex-wrap: wrap; /* Permite que las tarjetas se envuelvan a la siguiente línea */
+  justify-content: center; /* Centra las tarjetas horizontalmente */
+  gap: 20px; /* Espacio entre las tarjetas */
+  margin-top: 40px; /* Espacio superior para separar del título/descripción */
+}
+
+/* Estilos de las tarjetas flip */
 .card-flip {
-  width: 300px;
+  width: 300px; /* Ancho fijo para las tarjetas */
   height: 400px;
   perspective: 1000px;
-  margin: 30px auto;
+  margin-bottom: 30px; /* Espacio inferior entre filas de tarjetas */
   cursor: pointer;
 }
 
@@ -169,11 +183,17 @@ body {
   box-shadow: 0 6px 20px rgba(0, 0, 0, 0.1);
   padding: 20px;
   text-align: center;
+  display: flex; /* Usa flexbox para el contenido de la tarjeta */
+  flex-direction: column; /* Organiza el contenido en columna */
+  justify-content: space-between; /* Distribuye el espacio entre los elementos */
+  align-items: center; /* Centra los elementos horizontalmente */
 }
 
 .card-front img,
 .card-back img {
   width: 100%;
+  max-height: 180px; /* Altura máxima para las imágenes */
+  object-fit: cover; /* Asegura que la imagen cubra el área sin distorsionarse */
   border-radius: 10px;
   margin-bottom: 10px;
 }
@@ -181,7 +201,10 @@ body {
 .card-back {
   transform: rotateY(180deg);
 }
-.btn-primary {
+
+/* Estilos de los botones */
+.btn-primary,
+.btn-secondary {
   background-color: #ff5e62;
   border: none;
   border-radius: 5px;
@@ -189,41 +212,27 @@ body {
   color: white;
   font-weight: bold;
   transition: background-color 0.3s ease;
+  margin-top: auto; /* Empuja el botón hacia abajo */
 }
 
-.btn-primary:hover {
-  background-color: #ff914d;
-}
-.btn-secondary{
-    background-color: #ff5e62;
-  border: none;
-  border-radius: 5px;
-  padding: 10px 20px;
-  color: white;
-  font-weight: bold;
-  transition: background-color 0.3s ease;
-}
-
+.btn-primary:hover,
 .btn-secondary:hover {
   background-color: #ff914d;
 }
-/* css de la segunda tarjeta */
 
-.peluqueria {
-  width: 100%;
-  background: linear-gradient(90deg, #ff7e5f, #feb47b); /* gradiente cálido */
-  padding: 60px 20px;
-  margin-top: 50px;
-  border-radius: 40px;
-  text-align: center;
-  color: #4E342E;
-}
-.cirugias {
-  width: 100%;
-  background: linear-gradient(90deg, #ff7e5f, #feb47b); /* gradiente cálido */
-  padding: 60px 20px;
-  margin-top: 50px;
-  border-radius: 40px;
-  text-align: center;
-  color: #4E342E;
+/* Media Queries para responsividad */
+@media (max-width: 768px) {
+  .consulta-titulo,
+  .titulo-seccion {
+    font-size: 2rem; /* Reduce el tamaño del título en pantallas pequeñas */
+  }
+
+  .consulta-descripcion {
+    font-size: 1rem; /* Reduce el tamaño de la descripción */
+  }
+
+  .card-flip {
+    width: 90%; /* Las tarjetas ocupan más ancho en móviles */
+    max-width: 350px; /* Limita el ancho máximo en móviles */
+  }
 }
