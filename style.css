@@ -1,149 +1,146 @@
+/*
+ * Comentarios de Estilos CSS para Amor-animal
+ * Este archivo contiene los estilos para la página web, organizados por secciones.
+ */
+
+/* ==================================== */
+/* Estilos Generales del Cuerpo (body)  */
+/* ==================================== */
 /* Fondo general claro que combina con el logo */
 body {
-  background-color: #FFE0B2;
-  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-  margin-top: 20px; /* Espacio para navbar fija */
+  background-color: #FFE0B2; /* Color de fondo del cuerpo */
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; /* Fuente principal */
+  margin-top: 20px; /* Espacio superior para navbar fija */
 }
 
-/* Logo redondo y bien ajustado */
-.logo {
-  width: 40px;
-  height: 40px;
-  border-radius: 10px;
-  object-fit: cover;
+/* ==================================== */
+/* Estilos de la Barra de Navegación (Navbar) */
+/* ==================================== */
+/* Logo redondo */
+.logo { /* Clase para el logo de la barra de navegación */
+  width: 40px; /* Ancho del logo */
+  height: 40px; /* Alto del logo */
+  border-radius: 10px; /* Bordes redondeados */
+  object-fit: cover; /* Ajuste de la imagen */
 }
 
 /* NAVBAR con degradado que toma los colores del corazón */
-.navbar {
-  background: linear-gradient(135deg, #F57C00, #E53935); /* Degradado naranja-rojo */
-}
-.offcanvas-title {
-  font-weight: bold;
-}
-.offcanvas-body {
-  background-color: #FFE0B2; /* Fondo claro para el menú */
-}
-/* Título "Amor-animal" en color amarillo suave */
-.navbar-brand {
-  color: #FFF176; /* Amarillo pastel */
-  font-weight: bold;
-  font-size: 1.2rem;
-}
-.navbar-brand {
-  color: #FFF176;
-  font-weight: bold;
-  font-size: 1.2rem;
-  transition: color 0.3s ease;
+.navbar { /* Clase principal de la barra de navegación de Bootstrap */
+  background: linear-gradient(135deg, #F57C00, #E53935); /* Degradado naranja-rojo para el fondo */
 }
 
-.navbar-brand:hover {
+.offcanvas-title { /* Título del menú offcanvas (menú lateral en móvil) */
+  font-weight: bold; /* Texto en negrita */
+}
+
+.offcanvas-body { /* Cuerpo del menú offcanvas */
+  background-color: #FFE0B2; /* Fondo claro para el menú */
+}
+
+/* Título "Amor-animal" en color amarillo suave */
+.navbar-brand { /* Título de la marca en la barra de navegación */
+  color: #FFF176; /* Amarillo pastel */
+  font-weight: bold; /* Texto en negrita */
+  font-size: 1.2rem; /* Tamaño de fuente */
+  transition: color 0.3s ease; /* Transición suave para el cambio de color */
+}
+
+.navbar-brand:hover { /* Efecto hover para el título de la marca */
   color: #080808; /* Negro casi puro al pasar el mouse */
 }
 
-.nav-item a {
-  color: #0a0a0a;
-  font-weight: bold;
-  font-size: 1.2rem;
-  transition: color 0.3s ease;
+.nav-item a { /* Enlaces individuales dentro del menú de navegación */
+  color: #0a0a0a; /* Color de texto oscuro */
+  font-weight: bold; /* Texto en negrita */
+  font-size: 1.2rem; /* Tamaño de fuente */
+  transition: color 0.3s ease; /* Transición suave para el cambio de color */
 }
 
-.nav-item a:hover {
+.nav-item a:hover { /* Efecto hover para los enlaces de navegación */
   color: #FFD600; /* Opcional: puedes cambiar el color al hacer hover */
 }
-/* Sección de Servicios */
-.seccion-servicios {
-  padding: 60px 0;
-  background: linear-gradient(135deg, #FFF3E0, #FFCC80);
+
+/* ==================================== */
+/* Sección: Nuestros Servicios         */
+/* ==================================== */
+.seccion-servicios { /* Contenedor principal de la sección "Nuestros Servicios" */
+  padding: 60px 0; /* Espaciado interno superior e inferior */
+  background: linear-gradient(135deg, #FFF3E0, #FFCC80); /* Degradado de fondo */
 }
 
-.titulo-seccion {
-  text-align: center;
-  color: #4E342E;
-  font-weight: bold;
-  margin-bottom: 40px;
-  font-size: 2.5rem;
+.titulo-seccion { /* Título principal de la sección "Nuestros Servicios" */
+  text-align: center; /* Alineación del texto al centro */
+  color: #4E342E; /* Color de texto oscuro */
+  font-weight: bold; /* Texto en negrita */
+  margin-bottom: 40px; /* Margen inferior */
+  font-size: 2.5rem; /* Tamaño de fuente */
 }
 
-.card-servicio {
-  border: none;
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
-  transition: transform 0.3s ease;
-  background-color: #ffffff;
+.card-servicio { /* Tarjetas de servicio dentro de la sección "Nuestros Servicios" */
+  border: none; /* Sin borde */
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1); /* Sombra suave */
+  transition: transform 0.3s ease; /* Transición para el efecto hover */
+  background-color: #ffffff; /* Fondo blanco */
 }
 
-.card-servicio:hover {
-  transform: translateY(-5px);
+.card-servicio:hover { /* Efecto hover para las tarjetas de servicio */
+  transform: translateY(-5px); /* Desplazamiento hacia arriba al pasar el mouse */
 }
 
-.icono-servicio {
-  width: 80px;
-  margin-bottom: 15px;
+.icono-servicio { /* Iconos dentro de las tarjetas de servicio */
+  width: 80px; /* Ancho del icono */
+  margin-bottom: 15px; /* Margen inferior */
 }
 
-.titulo-servicio {
-  color: #4E342E;
-  font-size: 1.25rem;
-  font-weight: 600;
+.titulo-servicio { /* Título de cada servicio dentro de las tarjetas */
+  color: #4E342E; /* Color de texto oscuro */
+  font-size: 1.25rem; /* Tamaño de fuente */
+  font-weight: 600; /* Grosor de la fuente */
 }
 
-.descripcion-servicio {
-  color: #6D4C41;
-  font-size: 0.95rem;
+.descripcion-servicio { /* Descripción de cada servicio dentro de las tarjetas */
+  color: #6D4C41; /* Color de texto más claro */
+  font-size: 0.95rem; /* Tamaño de fuente */
 }
 
-/* inicio de la sección de consulta veterinaria */
-/* Esta clase no se estaba usando en el HTML que me pasaste, la mantengo por si la necesitas */
-.inicio-consulta {
-  background: linear-gradient(to right, #ff914d, #ff5e62); /* fondo degradado */
-  text-align: center;
-  padding: 60px 20px;
-  color: rgb(248, 245, 245);
+/* ==================================== */
+/* Estilos Comunes para Secciones de Contenido (Consulta, Peluquería, Cirugías, Emergencias, Adopciones, Tienda) */
+/* ==================================== */
+.consulta-veterinaria, /* Sección de Consulta Veterinaria */
+.peluqueria,          /* Sección de Peluquería */
+.cirugias,            /* Sección de Cirugías Menores */
+.emergencias,         /* Sección de Emergencias */
+.adopciones,          /* Sección de Adopciones */
+.tienda {             /* Sección de Tienda */
+  width: 100%; /* Ancho completo */
+  /* Eliminado: background: linear-gradient(90deg, #ff7e5f, #feb47b); */
+  padding: 60px 20px; /* Espaciado interno */
+  margin-top: 50px; /* Margen superior para separar secciones */
+  /* Eliminado: border-radius: 40px; */
+  text-align: center; /* Alineación de texto al centro */
+  color: #4E342E; /* Color de texto oscuro */
 }
 
-.inicio-consulta h2 { /* Cambiado de .inicio-consulta directamente a h2 para especificidad */
-  font-size: 3rem;
-  margin-bottom: 10px;
-  font-weight: bold;
+.container-consulta { /* Contenedor de texto para títulos y descripciones en estas secciones */
+  max-width: 900px; /* Ancho máximo */
+  margin: 0 auto; /* Centrado horizontal */
 }
 
-.inicio-consulta p {
-  font-size: 1.2rem;
-  color: #ffe;
+.consulta-titulo { /* Título principal de estas secciones (incluye el título de Cirugías Menores) */
+  font-size: 3rem; /* Tamaño de fuente grande */
+  font-weight: bold; /* Texto en negrita */
+  margin-bottom: 20px; /* Margen inferior */
 }
 
-.consulta-veterinaria,
-.peluqueria,
-.cirugias,
-.emergencias, /* Añadido para las nuevas secciones */
-.adopciones, /* Añadido para las nuevas secciones */
-.tienda { /* Añadido para las nuevas secciones */
-  width: 100%;
-  background: linear-gradient(90deg, #ff7e5f, #feb47b); /* gradiente cálido */
-  padding: 60px 20px;
-  margin-top: 50px;
-  border-radius: 40px;
-  text-align: center;
-  color: #4E342E;
+.consulta-descripcion { /* Descripción debajo del título en estas secciones */
+  font-size: 1.25rem; /* Tamaño de fuente */
+  line-height: 1.6; /* Altura de línea para mejor legibilidad */
 }
 
-.container-consulta {
-  max-width: 900px;
-  margin: 0 auto;
-}
-
-.consulta-titulo {
-  font-size: 3rem;
-  font-weight: bold;
-  margin-bottom: 20px;
-}
-
-.consulta-descripcion {
-  font-size: 1.25rem;
-  line-height: 1.6;
-}
-
-/* Contenedor de las tarjetas flip */
-.container-cards {
+/* ==================================== */
+/* Estilos para Contenedores de Tarjetas Flip (Común en varias secciones, incluyendo Cirugías Menores) */
+/* ==================================== */
+.container-cards { /* Contenedor flexbox para las tarjetas flip */
   display: flex; /* Usa flexbox para alinear las tarjetas */
   flex-wrap: wrap; /* Permite que las tarjetas se envuelvan a la siguiente línea */
   justify-content: center; /* Centra las tarjetas horizontalmente */
@@ -151,88 +148,132 @@ body {
   margin-top: 40px; /* Espacio superior para separar del título/descripción */
 }
 
-/* Estilos de las tarjetas flip */
-.card-flip {
-  width: 300px; /* Ancho fijo para las tarjetas */
-  height: 400px;
-  perspective: 1000px;
+/* Estilos de las tarjetas flip (front y back) */
+.card-flip { /* Contenedor principal de cada tarjeta flip */
+  width: 300px; /* Ancho fijo para las tarjetas en desktop */
+  height: 400px; /* Alto fijo para las tarjetas en desktop */
+  perspective: 1000px; /* Perspectiva para el efecto 3D del flip */
   margin-bottom: 30px; /* Espacio inferior entre filas de tarjetas */
-  cursor: pointer;
+  cursor: pointer; /* Cursor de puntero para indicar interactividad */
 }
 
-.card-inner {
-  position: relative;
-  width: 100%;
-  height: 100%;
-  transition: transform 0.8s ease-in-out;
-  transform-style: preserve-3d;
+.card-inner { /* Contenedor interno que rota para el efecto flip */
+  position: relative; /* Posicionamiento relativo */
+  width: 100%; /* Ancho completo del padre */
+  height: 100%; /* Alto completo del padre */
+  transition: transform 0.8s ease-in-out; /* Transición suave para la rotación */
+  transform-style: preserve-3d; /* Mantiene el elemento 3D durante la transformación */
 }
 
-.card-flip.flipped .card-inner {
-  transform: rotateY(180deg);
+.card-flip.flipped .card-inner { /* Estado cuando la tarjeta está volteada */
+  transform: rotateY(180deg); /* Rota 180 grados en el eje Y */
 }
 
-.card-front,
-.card-back {
-  position: absolute;
-  width: 100%;
-  height: 100%;
-  backface-visibility: hidden;
-  border-radius: 15px;
-  background-color: #fff;
-  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.1);
-  padding: 20px;
-  text-align: center;
+.card-front, /* Parte frontal de la tarjeta flip */
+.card-back { /* Parte trasera de la tarjeta flip */
+  position: absolute; /* Posicionamiento absoluto */
+  width: 100%; /* Ancho completo */
+  height: 100%; /* Alto completo */
+  backface-visibility: hidden; /* Oculta la parte trasera cuando no está de frente */
+  border-radius: 15px; /* Bordes redondeados */
+  background-color: #fff; /* Fondo blanco */
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.1); /* Sombra suave */
+  padding: 20px; /* Espaciado interno */
+  text-align: center; /* Alineación de texto al centro */
   display: flex; /* Usa flexbox para el contenido de la tarjeta */
   flex-direction: column; /* Organiza el contenido en columna */
   justify-content: space-between; /* Distribuye el espacio entre los elementos */
   align-items: center; /* Centra los elementos horizontalmente */
 }
 
-.card-front img,
-.card-back img {
-  width: 100%;
+.card-front img, /* Imágenes en la parte frontal de las tarjetas flip */
+.card-back img { /* Imágenes en la parte trasera de las tarjetas flip */
+  width: 100%; /* Ancho completo de la imagen */
   max-height: 180px; /* Altura máxima para las imágenes */
   object-fit: cover; /* Asegura que la imagen cubra el área sin distorsionarse */
-  border-radius: 10px;
-  margin-bottom: 10px;
+  border-radius: 10px; /* Bordes redondeados */
+  margin-bottom: 10px; /* Margen inferior */
 }
 
-.card-back {
-  transform: rotateY(180deg);
+/* Nuevas reglas para limitar el texto en los párrafos de las tarjetas */
+.card-front p,
+.card-back p {
+    overflow: hidden; /* Oculta el contenido que se desborda */
+    text-overflow: ellipsis; /* Añade puntos suspensivos si el texto se corta */
+    display: -webkit-box; /* Necesario para -webkit-line-clamp */
+    -webkit-line-clamp: 3; /* Limita el texto a 3 líneas. Puedes ajustar este valor. */
+    -webkit-box-orient: vertical; /* Necesario para -webkit-line-clamp */
+    margin-bottom: 10px; /* Espacio debajo del párrafo */
 }
 
-/* Estilos de los botones */
-.btn-primary,
-.btn-secondary {
-  background-color: #ff5e62;
-  border: none;
-  border-radius: 5px;
-  padding: 10px 20px;
-  color: white;
-  font-weight: bold;
-  transition: background-color 0.3s ease;
-  margin-top: auto; /* Empuja el botón hacia abajo */
+
+.card-back { /* Estilos específicos para la parte trasera de la tarjeta */
+  transform: rotateY(180deg); /* Rota 180 grados para que esté oculta inicialmente */
 }
 
-.btn-primary:hover,
-.btn-secondary:hover {
-  background-color: #ff914d;
+/* ==================================== */
+/* Estilos de los Botones (Comunes)     */
+/* ==================================== */
+.btn-primary, /* Botones primarios */
+.btn-secondary { /* Botones secundarios */
+  background-color: #ff5e62; /* Color de fondo */
+  border: none; /* Sin borde */
+  border-radius: 5px; /* Bordes redondeados */
+  padding: 10px 20px; /* Espaciado interno */
+  color: white; /* Color de texto blanco */
+  font-weight: bold; /* Texto en negrita */
+  transition: background-color 0.3s ease; /* Transición suave para el cambio de color */
+  margin-top: auto; /* Empuja el botón hacia abajo para que se alinee en la parte inferior */
 }
 
-/* Media Queries para responsividad */
-@media (max-width: 768px) {
-  .consulta-titulo,
-  .titulo-seccion {
+.btn-primary:hover, /* Efecto hover para botones primarios */
+.btn-secondary:hover { /* Efecto hover para botones secundarios */
+  background-color: #ff914d; /* Cambio de color al pasar el mouse */
+}
+
+/* ==================================== */
+/* Media Queries para Responsividad     */
+/* ==================================== */
+@media (max-width: 768px) { /* Estilos aplicados en pantallas de 768px o menos (típicamente móviles y tablets) */
+  .consulta-titulo, /* Títulos de secciones en móvil */
+  .titulo-seccion { /* Títulos de la sección "Nuestros Servicios" en móvil */
     font-size: 2rem; /* Reduce el tamaño del título en pantallas pequeñas */
   }
 
-  .consulta-descripcion {
+  .consulta-descripcion { /* Descripciones de secciones en móvil */
     font-size: 1rem; /* Reduce el tamaño de la descripción */
   }
 
-  .card-flip {
+  .card-flip { /* Tarjetas flip en móvil */
     width: 90%; /* Las tarjetas ocupan más ancho en móviles */
     max-width: 350px; /* Limita el ancho máximo en móviles */
+    height: auto; /* ¡Importante! La altura se ajusta automáticamente al contenido */
+    min-height: 380px; /* Altura mínima para asegurar consistencia, pero permite crecer */
+  }
+
+  /* Ajustes para las caras de la tarjeta en móvil para asegurar que el contenido no se desborde */
+  .card-front,
+  .card-back {
+    /* Mantener position: absolute para el efecto flip */
+    height: auto; /* Permitir que la altura se ajuste automáticamente al contenido */
+    min-height: 380px; /* Asegura que las caras tengan al menos la misma altura mínima que el contenedor .card-flip */
+    padding: 15px; /* Ajustar el padding para dar más espacio al contenido */
+    /* Asegurarse de que el flexbox interno se comporte correctamente */
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  /* Asegurar que las imágenes no sean demasiado grandes en móvil */
+  .card-front img,
+  .card-back img {
+    max-height: 150px; /* Reducir un poco la altura máxima de la imagen en móvil */
+  }
+
+  /* Limitar el texto en los párrafos de las tarjetas en móvil */
+  .card-front p,
+  .card-back p {
+      -webkit-line-clamp: 3; /* Limita el texto a 3 líneas. Ajusta este valor si necesitas más o menos texto. */
+      font-size: 0.9rem; /* Ligeramente más pequeño en móvil para que quepa mejor */
+      line-height: 1.3; /* Ajustar la altura de línea para que quepa mejor */
   }
 }
